@@ -1,4 +1,5 @@
 package gittiGidiyorTest;
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,8 +32,10 @@ public class MainTest {
 
         OrdersPage orders = new OrdersPage(driver);
 
-
-
+    }
+    @After
+    public void exit() {
+        driver.quit();
     }
 }
 
